@@ -1,0 +1,6 @@
+#ifndef LIZARD_BID
+#define LIZARD_BID
+
+#define AEECLSID_LIZARD    	0x01143a42
+
+#endif //LIZARD_BID

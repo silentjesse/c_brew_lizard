@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BREWRes Name="lizard" VERSION="1">
+<Strings Encoding="Unicode">
+	<String Id="1001" Name="IDS_MAINUI_TITLE">
+		<Text>主界面</Text>
+	</String>
+	<String Id="1002" Name="IDS_MAINUI_LOCATE">
+		<Text>位置上报</Text>
+	</String>
+	<String Id="1003" Name="IDS_MAINUI_PHOTO">
+		<Text>拍照上传</Text>
+	</String>
+	<String Id="1004" Name="IDS_MAINUI_SETTINGS">
+		<Text>设置</Text>
+	</String>
+	<String Id="1005" Name="IDS_POSUI_TITLE">
+		<Text>位置信息状态</Text>
+	</String>
+	<String Id="1006" Name="IDS_POSUI_ACTION_START">
+		<Text>开始</Text>
+	</String>
+	<String Id="1007" Name="IDS_POSUI_ACTION_RETURN">
+		<Text>返回</Text>
+	</String>
+	<String Id="1008" Name="IDS_POSUI_ACTION_STOP">
+		<Text>停止</Text>
+	</String>
+	<String Id="1009" Name="IDS_POSUI_STATIC_DEFAULTTEXT">
+		<Text>点击"开始"按钮开始定位</Text>
+	</String>
+	<String Id="1010" Name="IDS_POSUI_ACTION_EXIT">
+		<Text>退出</Text>
+	</String>
+	<String Id="1011" Name="IDS_STRING_TRACKTYPE">
+		<Text>定位类型</Text>
+	</String>
+</Strings>
+<Objects MimeType="image/bmp">
+	<Object Id="5001" Name="IDI_OBJECT_LOCATE">
+		<File>C:\brewsdk\sdk\examples\expensetracker\images\256color\load.bmp</File>
+	</Object>
+</Objects>
+<Dialogs>
+	<Dialog Id="6001" Name="IDD_DIALOG_POSUI" Focus="0" Flags="1">
+		<Controls>
+			<Static Id="7001" Name="IDC_STATIC_POSITIONUI_TITLE">
+				<TitleID>IDS_POSUI_TITLE</TitleID>
+				<Position PosX="-1" PosW="40" PosY="-1" PosH="40"/>
+				<Items/></Static>
+			<SoftKey Id="7002" Name="IDC_SOFTKEY_POSUI_ACTION">
+				<Position PosX="-1" PosW="30" PosY="-1" PosH="30"/>
+				<Items>
+					<Item Id="8001" Name="IDC_CONTROL_ITEM_POSUI_START">
+						<TextID>IDS_POSUI_ACTION_START</TextID>
+					</Item>
+					<Item Id="8002" Name="IDC_CONTROL_ITEM_POSUI_RETURN">
+						<TextID>IDS_POSUI_ACTION_STOP</TextID>
+					</Item>
+					<Item Id="8003" Name="IDC_CONTROL_ITEM_POSUI_EXIT">
+						<TextID>IDS_POSUI_ACTION_RETURN</TextID>
+					</Item>
+				</Items>
+			</SoftKey>
+		</Controls>
+		<Position PosX="1" PosW="150" PosY="1" PosH="250"/>
+	</Dialog>
+</Dialogs>
+</BREWRes>
