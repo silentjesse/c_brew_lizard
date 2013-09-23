@@ -12,8 +12,8 @@
 	int (*pFNClose)(iname* p);\
 	int (*pFNRelease)(iname*)
 
-AEEINTERFACE_DEFINE(IHttp ); 
 
+AEEINTERFACE_DEFINE(IHttp ); 
 #define  IHTTP_Connect( p)\
 	AEEGETPVTBL(p, IHttp)->pFNConnect( p)
 
